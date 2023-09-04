@@ -21,4 +21,4 @@ Utilisation de l'API REST de l'Art Institute de Chicago qui fournit des données
 
 ## 🌐 Screenshots
 
-![Home page](screenshot.png)
+![Home page](./screenshot.png)
