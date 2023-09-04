@@ -27,6 +27,7 @@ app.fetchData(page);
 // la page correspondante du jeu de données
 const paginationEls = document.querySelectorAll(".pagination button");
 paginationEls.forEach(paginationEl => {
+	paginationEl.style.cursor = "pointer";
 	paginationEl.addEventListener("click", (e) => {
 		page = e.target.innerText;
 		app.fetchData(page);
@@ -50,7 +51,6 @@ const resetSearchButton = document.querySelector(
 
 searchButton.addEventListener("click", (element) => {
 	element.preventDefault();
-
 	const searchString = searchInput.value;
 	app.searchArts(searchString);
 });

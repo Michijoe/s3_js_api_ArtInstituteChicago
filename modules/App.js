@@ -45,7 +45,7 @@ export default class App {
 	 */
 	displayArts(arts) {
 		const divEl = document.createElement("div");
-		divEl.setAttribute("class", "grid");
+		divEl.setAttribute("class", "mosaic");
 
 		for (const art of arts) {
 			const artObj = new Art(art);
@@ -68,7 +68,6 @@ export default class App {
 	 */
 	searchArts(searchString) {
 		const formattedSearchString = searchString.toLowerCase().trim();
-
 		const results = this.data.filter(
 			(art) =>
 				art.title.toLowerCase().includes(formattedSearchString)

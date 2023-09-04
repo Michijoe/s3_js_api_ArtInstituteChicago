@@ -36,16 +36,17 @@ export default class Art {
 			titleEl.innerText = this.#title;
 			articleEl.appendChild(titleEl);
 		}
-		if (this.#dimensions) {
-			const dimensionsEl = document.createElement("span");
-			dimensionsEl.innerText = `Dimensions: ${this.#dimensions}`;
-			articleEl.appendChild(dimensionsEl);
-		}
 		if (this.#artist) {
-			const artistEl = document.createElement("span");
-			artistEl.innerText = `Artist: ${this.#artist}`;
+			const artistEl = document.createElement("p");
+			artistEl.innerText = `${this.#artist}`;
 			articleEl.appendChild(artistEl);
 		}
+		if (this.#dimensions) {
+			const dimensionsEl = document.createElement("p");
+			dimensionsEl.innerText = `${this.#dimensions}`;
+			articleEl.appendChild(dimensionsEl);
+		}
+
 
 		return articleEl;
 	}

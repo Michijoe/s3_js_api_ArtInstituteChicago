@@ -1,16 +1,22 @@
 article {
 	background-color: white;
 	border-radius: 5px;
-	padding: 0.5rem;
+	padding: 10px;
 	border: 1px solid lightgray;
-	height: fit-content;
 	box-sizing: border-box;
+	margin-bottom: 10px;
+	width:  100%;
+ 	display: inline-block;
 }
 
 h2 {
 	font-weight: bold;
 	font-size: 1.1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 	text-overflow: ellipsis;
 	overflow: hidden;
+}
+
+strong {
+	font-weight: bold;
 }
